@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+    <style>
+      *{
+            font-family: "Poppins", sans-serif;
+        }
+        @media (min-width:1200px) and (max-width:1600px){
+            .location-section{
+                background-color: #686D76;
+            }
+            .location-title{
+                text-align: center;
+                padding: 30px 0px 10px 0px;
+            }
+            .location-img-section{
+                display: flex;
+                justify-content: space-around;
+                flex-wrap: wrap;
+            }
+            .location-img{
+                height: 230px;
+                width: 450px;
+                border-radius: 12px;
+            }
+            .location{
+                color: #000000;
+                font-size: 18px;
+                font-weight: bold;
+                text-align: center;
+                padding: 10px;
+            }
+
+            .locations-container{
+                padding: 30px;
+                display: flex;
+                justify-content: space-around;
+            }
+            .location-name{
+                font-weight: bold;
+                font-size: 20px;
+                color: #000000;
+            }
+            .office-address{
+                color: #373A40;
+                font-size: 16px;
+            }
+            .location-img-card{
+                background-color: #ffffff;
+                width: 500px;
+                height: 300px;
+                text-align: center;
+                padding: 30px;
+                border-radius: 12px;
+                margin-bottom: 15px;
+            }
+        }
+        @media (max-width:750px){
+            .location-section{
+                background-color: #686D76;
+            }
+            .location-title{
+                text-align: center;
+                padding: 30px 0px 10px 0px;
+            }
+            .location-img-section{
+                display: flex;
+                justify-content: space-around;
+                flex-wrap: wrap;
+            }
+            .location-img{
+                height: 230px;
+                width: 450px;
+                border-radius: 12px;
+            }
+            .location{
+                color: #000000;
+                font-size: 18px;
+                font-weight: bold;
+                text-align: center;
+                padding: 10px;
+            }
+
+            .locations-container{
+                padding: 30px;
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+            }
+            .location-name{
+                font-weight: bold;
+                font-size: 20px;
+                color: #000000;
+            }
+            .office-address{
+                color: #373A40;
+                font-size: 16px;
+            }
+            .location-img-card:hover{
+                background-color: #ffffff;
+                width: 500px;
+                height: 300px;
+                text-align: center;
+                padding: 30px;
+                border-radius: 12px;
+                margin-bottom: 15px;
+            }
+        }
+        @media (min-width:751px) and (max-width:1199px){
+            .location-section{
+                background-color: #686D76;
+            }
+            .location-title{
+                text-align: center;
+                padding: 30px 0px 10px 0px;
+            }
+            .location-img-section{
+                display: flex;
+                justify-content: space-around;
+                flex-wrap: wrap;
+            }
+            .location-img{
+                height: 200px;
+                width: 380px;
+                border-radius: 12px;
+            }
+            .location{
+                color: #000000;
+                font-size: 18px;
+                font-weight: bold;
+                text-align: center;
+                padding: 10px;
+            }
+
+            .locations-container{
+                padding: 30px;
+                display: flex;
+                justify-content: space-around;
+            }
+            .location-name{
+                font-weight: bold;
+                font-size: 20px;
+                color: #000000;
+            }
+            .office-address{
+                color: #373A40;
+                font-size: 16px;
+            }
+            .location-img-card:hover{
+                background-color: #ffffff;
+                width: 440px;
+                height: 270px;
+                text-align: center;
+                padding: 30px;
+                border-radius: 12px;
+                margin-bottom: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+  <!--Location Section-->
+  <div class="location-section">
+    <div class="location-title">
+        <h2>Our Locations</h2>
+        <p>Our diverse team brings a world of unique perspectives and niche capabilities to every</br> project we undertake, serving clients worldwide with unparalleled dedication and</br> excellence. Discover how our global presence enables us to deliver tailor-made</br> solutions that transcend borders and exceed expectations.</p>
+    </div>
+    <div class="location-img-section">
+
+        <div id="northAmerica" class="location-img-card">
+            <img src="../images/america.jpg" class="location-img" >
+            <p class="location">Ameria(4 Locations)</p>
+        </div>
+
+        <div id="europe">
+            <img src="../images/europe.jpg" class="location-img"  >
+            <p class="location">Europe(3 Locations)</p>
+        </div>
+        <div id="asia">
+            <img src="../images/asia.jpg" class="location-img" >
+            <p class="location">Asia(2 Locations)</p>
+        </div>
+        <div id="middleEast">
+            <img src="../images/Middle-east.jpg" class="location-img" >
+            <p class="location">Middle East(1 Location)</p>
+        </div>
+    </div>
+
+    <hr/>
+    <!--North America-->
+    <div class="locations-container" id ="americaOffices">
+        <div class="Office-location">
+            <h4 class="location-name">New Jersey</h4>
+            <p class="office-address">92 East Main Street Suite:405</br>
+                Somerville, New Jersey 08876</br>
+                United States
+            </p>
+        </div>
+
+        <div class="Office-location">
+            <h4 class="location-name">New Jersey</h4>
+            <p class="office-address">324 Courtyard Drive,</br>
+                Hillsborough, NJ 08844
+            </p>
+        </div>
+
+        <div class="Office-location">
+            <h4 class="location-name">Illionois</h4>
+            <p class="office-address">4255 Westbrook Dr Unit 222</br>
+                Illinois 60504</br>
+                United States
+            </p>
+        </div>
+
+        <div class="Office-location">
+            <h4 class="location-name">Texas</h4>
+            <p class="office-address">3401 Cluster Rd Plano, Texas 75023</br>
+                United States
+            </p>
+        </div>
+
+    </div>
+
+    <!--Europe-->
+    <div class="locations-container" hidden id="europeOffices">
+        <div class="Office-location">
+            <h4 class="location-name">Ireland</h4>
+            <p class="office-address">31 Glentain Manor Upper Carnamuggah,</br>
+                County Donegal</br>
+                Ireland
+            </p>
+        </div>
+
+        <div class="Office-location">
+            <h4 class="location-name">Germany</h4>
+            <p class="office-address">Procaltech GmbH</br>
+                c/o LETRIX Heubnerweg 7</br>
+                14059 Berlin Germany
+            </p>
+        </div>
+
+        <div class="Office-location">
+            <h4 class="location-name">Turkey</h4>
+            <p class="office-address">Hakki Yeten Cad Selenium Plaza No: 10/1</br>
+                Kat5-6, Fulya, Istanbul 34349</br>
+                Turkey
+            </p>
+        </div>
+
+    </div>
+
+    <!--Asia-->
+    <div class="locations-container" hidden id="asiaOffices">
+        <div class="Office-location">
+            <h4 class="location-name">Mohali</h4>
+            <p class="office-address">D 190 Industrial Area Sector 74, SAS Nagar</br>
+                Punjab 160071</br>
+                India
+            </p>
+        </div>
+
+        <div class="Office-location">
+            <h4 class="location-name">Hyderabad</h4>
+            <p class="office-address">Shangrilla Plaza, Unit 407, Road No 2,
+            </br> Banjarahills, Hyderabad, Telangana 500034
+            </br> India
+            </p>
+        </div>
+    </div>
+
+    <!--Middle East-->
+    <div class="locations-container"  hidden id="middleEastOffices">
+        <div class="Office-location">
+            <h4 class="location-name">Dubai</h4>
+            <p class="office-address">Savvy One Businesses Center, 25th Floor, 
+            </br>The Citadel Tower, Business Bay, Sheikh 
+            </br>Zayed Road, Dubai, UAE
+            </p>
+        </div>
+    </div>
+  </div>
+  <script src="locationSection.js" charset="UTF-8"></script>
+</body>
+</html>

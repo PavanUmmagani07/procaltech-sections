@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+    <style>
+        /*Form-Container*/
+.form-container{
+    padding: 30px;
+}
+.form-title{
+    text-align: center;
+    margin-bottom: 12px;
+}
+.form-heading{
+    font-weight: bold;
+}
+.left-input-element{
+    float: left;
+    width: 48%;
+}
+.right-input-element{
+    float: right;
+    width: 48%;
+}
+.float-clear{
+    clear: both;
+}
+.input-element{
+    width: 100%;
+    height: 60px;
+    padding: 8px;
+}
+.comments-element{
+    width: 100%;
+    height: 60px;
+    padding: 8px;
+}
+.checkbox-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.checkbox-ele{
+    height: 15px;
+    width: 15px;
+}
+.checkbox-descri{
+    width: 80% auto;
+}
+.btn-container{
+    text-align: center;
+
+}
+.submit-btn{
+    background-color: #DB764A;
+    border-radius: 20px;
+    border-color: #DB764A;
+    padding: 6px; 
+}
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <div class="form-title">
+            <h2 class="form-heading">We want to hear from you !</h2>
+            <p>Fill out our form and a Procal expert will reach out to you</p>
+        </div>
+        <form id="contactUsForm">
+            <div class="row-1">
+                <div class="left-input-element">
+                    <input type="text" placeholder="First Name" class="input-element" id="firstName"/>
+                    <p id="firstNameErrorMsg"></p>
+                </div>
+                <div class="right-input-element">
+                    <input type="text" placeholder="Last Name" class="input-element" id="lastName"/>
+                    <p id="lastNameErrorMsg"></p>
+                </div>
+                <div class="float-clear"></div>
+            </div>
+
+            <div class="row-2">
+                <div class="left-input-element">
+                    <input type="email" placeholder="E-Mail" class="input-element" id="eMail"/>
+                    <p id="emailErrorMsg"></p>
+                </div>
+                <div class="right-input-element">
+                    <input type="text" placeholder="Mobile Number" class="input-element" id="mobileNumber"/>
+                    <p id="mobileNumberErrorMsg"></p>
+                </div>
+                <div class="float-clear"></div>
+            </div>
+            <div class="row-3 mb-3">
+                <input type="text" placeholder="Your Inquiry or Comments" class="comments-element" id="comments"/>
+                <p class="commentsErrorMsg"></p>
+            </div>
+            <div class="checkbox-container mb-3">
+                <input type="checkbox" id="checkbox" class="checkbox-ele">
+                <label for="checkbox" class="checkbox-descri">consent to PROCAL Systems, INC. processing my personal information as set out in the Privacy Policy and Cookie Policy and that, given the global nature of PROCAL’s business, such processing may take place outside of my home jurisdiction.*</label> 
+                <p class="checkboxErrorMsg"></p>
+            </div>
+            <div class="btn-container">
+                <button type="submit" class="submit-btn mb-3" id="submitBtn">Submit My Form</button>
+            </div>
+        </form>
+    </div>
+    <script src="formSection.js" charset="UTF-8"></script>
+</body>
+</html>
